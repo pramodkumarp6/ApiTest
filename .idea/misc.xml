@@ -6,9 +6,13 @@
         <entry key="..\:/2022App/KotlinApp/ApiTestCorotines/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/2022App/KotlinApp/ApiTestCorotines/app/src/main/res/layout/row_layout.xml" value="0.16304347826086957" />
         <entry key="..\:/2022App/KotlinApp/ApiTestCorotines/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/2022App/android/KotlinApp/ApiTestCorotines/app/src/main/res/drawable/edit_text_round_gray_background.xml" value="0.1" />
+        <entry key="..\:/2022App/android/KotlinApp/ApiTestCorotines/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/2022App/android/KotlinApp/ApiTestCorotines/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/2022App/android/KotlinApp/ApiTestCorotines/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/2022App/android/KotlinApp/ApiTestCorotines/app/src/main/res/layout/app_bar_dash.xml" value="0.21927083333333333" />
       </map>
     </option>
   </component>
-  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>

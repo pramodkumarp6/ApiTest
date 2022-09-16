@@ -1,81 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_marginLeft="15dp"
-    android:layout_marginRight="15dp"
-    tools:context="com.pramod.corotine.MainActivity">
-
-    <TextView
-        android:id="@+id/name1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/purple_500"
-        android:textAlignment="center"
-        android:lineSpacingMultiplier="50"
-        android:layout_marginTop="50dp"
-        android:text="Hello World!"
-       />
+    xmlns:tools="http://schemas.android.com/tools">
 
 
-    <EditText
-        android:id="@+id/email"
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/root_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/purple_500"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        android:hint="Email!"
-      />
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/purple_500"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        android:hint="password!"
-        />
+        android:layout_height="match_parent"
+        android:background="#E2E2E2"
+        tools:context=".MaiActivity">
 
-    <EditText
-        android:id="@+id/name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/purple_500"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        android:hint="name!"
-        />
-    <EditText
-        android:id="@+id/school"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/purple_500"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        android:hint="School!"
-        />
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#FFF"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        android:text="register!"
-        />
 
-    <Button
-        android:id="@+id/reg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#FFF"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
-        android:text="userdetail!"
-        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
 
-</LinearLayout>
+            <!--  <ImageView
+                  android:id="@+id/image_view_logo"
+                  android:layout_width="80dp"
+                  android:layout_height="80dp"
+                  android:layout_centerHorizontal="true"
+                  android:layout_marginTop="75dp"
+                  android:background="@drawable/ic_app_logo" />
+  -->
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="architect your app with"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textColor="#465A61"
+                    app:fontFamily="cursive" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="MVVM"
+                    android:textAllCaps="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textColor="#969EEE"
+                    android:textStyle="bold"
+                    android:typeface="monospace"
+                    app:fontFamily="casual" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayout1"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <EditText
+
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/edit_text_round_gray_background"
+                    android:drawablePadding="16dp"
+                    android:hint="Enter email "
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp" />
+
+                <EditText
+
+
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/edit_text_round_gray_background"
+                    android:drawablePadding="16dp"
+                    android:hint="password"
+                    android:inputType="textPassword"
+                    android:padding="12dp" />
+
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/edit_text_round_gray_background"
+                    android:drawablePadding="16dp"
+                    android:hint="Name"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp" />
+
+
+                <EditText
+
+
+                    android:id="@+id/school"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/edit_text_round_gray_background"
+                    android:drawablePadding="16dp"
+                    android:hint="School"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp" />
+
+                <!--   <TextView
+                       android:id="@+id/text_view_forget_password"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginBottom="12dp"
+                       android:text="Forget Password?"
+                       android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                       android:textColor="@color/purple_500" />
+   -->
+                <Button
+
+                    android:id="@+id/button"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Register"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+            <!--  <TextView
+                  android:id="@+id/text_view_sign_up"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/linearLayout2"
+                  android:layout_centerHorizontal="true"
+                  android:layout_marginTop="12dp"
+                  android:text="Don't have an account?\nSign Up Here"
+                  android:textAlignment="center"
+                  android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                  android:textColor="@color/design_default_color_on_primary" />-->
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:visibility="invisible" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

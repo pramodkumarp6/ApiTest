@@ -1,4 +1,4 @@
-package com.pramod.corotine.model
+package com.pramod.apitest.utils
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

@@ -1,4 +1,4 @@
-package com.pramod.corotine.model
+package com.pramod.apitest.model
 
 data class RegisterResponse(
     val error:Boolean?,

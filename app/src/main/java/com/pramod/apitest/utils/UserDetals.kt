@@ -1,4 +1,4 @@
-package com.pramod.corotine.model
+package com.pramod.apitest.utils
 
 class UserDetals (val body: String,
                   val id: Int,
